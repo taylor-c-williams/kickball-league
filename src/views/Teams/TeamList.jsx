@@ -10,7 +10,7 @@ export default function TeamList() {
 	}, []);
 	return (
 		<div>
-			sdfsds Teams:
+			Teams:
 			<ul>
 				{teams.map((team) => {
 					return (

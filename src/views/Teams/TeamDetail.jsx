@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getTeamById } from '../../services/teams';
+
 export default function TeamDetail() {
 	const { id } = useParams();
-	console.log(id);
-	const [team, setTeam] = useState('');
+	const [team, setTeam] = useState(null);
 	const [loading, setLoading] = useState(true);
-	console.log(team);
+
 	useEffect(() => {
 		getTeamById(id)
 			.then((res) => setTeam(res))
@@ -14,6 +14,7 @@ export default function TeamDetail() {
 	}, [id]);
 
 	if (loading) return <span className="loading">Loading...</span>;
+
 	return (
 		<div>
 			<Link to="/teams" className="App-link">
@@ -24,9 +25,11 @@ export default function TeamDetail() {
 			<ul>
 				{team.players.map((player) => {
 					return (
-						<li key={player.id}>
-							{player.position} - {player.name}
-						</li>
+						<Link to={`/players/${player.id}`}>
+							<li key={player.id}>
+								{player.position} - {player.name}
+							</li>
+						</Link>
 					);
 				})}
 			</ul>

@@ -7,6 +7,8 @@ import {
 import Home from './views/Home/Home';
 import TeamDetail from './views/Teams/TeamDetail';
 import TeamList from './views/Teams/TeamList';
+import PlayersDetail from './views/Players/PlayersDetail';
+import PlayersList from './views/Players/PlayersList';
 import './App.css';
 
 function App() {
@@ -21,12 +23,17 @@ function App() {
 					<NavLink to="/teams" className="App-link" exact>
 						Teams
 					</NavLink>
+					<NavLink to="/players" className="App-link" exact>
+						Players
+					</NavLink>
 				</header>
 
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/teams" component={TeamList} />
 					<Route exact path="/teams/:id" component={TeamDetail} />
+					<Route exact path="/players" component={PlayersList} />
+					<Route exact path="/players/:id" component={PlayersDetail} />
 				</Switch>
 			</Router>
 		</div>

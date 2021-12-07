@@ -4,9 +4,9 @@ import { getTeamById } from '../../services/teams';
 export default function TeamDetail() {
 	const { id } = useParams();
 	console.log(id);
-	const [team, setTeam] = useState(null);
+	const [team, setTeam] = useState('');
 	const [loading, setLoading] = useState(true);
-
+	console.log(team);
 	useEffect(() => {
 		getTeamById(id)
 			.then((res) => setTeam(res))

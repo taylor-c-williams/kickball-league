@@ -24,9 +24,9 @@ function App() {
 				</header>
 
 				<Switch>
-					<Route path="/" component={Home} />
-					<Route path="/teams" component={TeamList} />
-					<Route path="/teams/:id" component={TeamDetail} />
+					<Route exact path="/" component={Home} />
+					<Route exact path="/teams" component={TeamList} />
+					<Route exact path="/teams/:id" component={TeamDetail} />
 				</Switch>
 			</Router>
 		</div>

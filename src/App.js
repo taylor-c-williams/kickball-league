@@ -14,10 +14,10 @@ function App() {
 		<div className="App">
 			<Router>
 				<header>
+					Kickbol
 					<NavLink to="/" className="App-link" exact>
 						Home
 					</NavLink>
-
 					<NavLink to="/teams" className="App-link" exact>
 						Teams
 					</NavLink>

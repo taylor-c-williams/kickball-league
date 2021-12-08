@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a detailed view of an individual team 1`] = `
+exports[`should render a detailed view of an individual player 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>

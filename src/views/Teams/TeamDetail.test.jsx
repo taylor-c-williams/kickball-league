@@ -3,7 +3,7 @@ import { MemoryRouter, Route } from 'react-router-dom';
 import TeamDetail from './TeamDetail';
 
 it('should render a detailed view of an individual team', async () => {
-	const deets = render(
+	const container = render(
 		<MemoryRouter initialEntries={['/teams/1']}>
 			<Route path="/teams/:id">
 				<TeamDetail />
@@ -17,6 +17,6 @@ it('should render a detailed view of an individual team', async () => {
 		exact: false,
 	});
 
-	expect(deets).toMatchSnapshot();
+	expect(container).toMatchSnapshot();
 	expect(textEntry).toBeInTheDocument();
 });

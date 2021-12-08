@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import TeamList from './TeamList';
 
-test('renders app elements', () => {
+test('renders TeamList elements', () => {
 	const { container } = render(<TeamList />);
 
 	const textElement = screen.getByText('teams', { exact: false });

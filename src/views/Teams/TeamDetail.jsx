@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getTeamById } from '../../services/teams';
 
-export default function TeamDetail() {
+export default function TeamDetail({ label }) {
 	const { id } = useParams();
 	const [team, setTeam] = useState(null);
 	const [loading, setLoading] = useState(true);
@@ -20,6 +20,7 @@ export default function TeamDetail() {
 			<Link to="/teams" className="App-link">
 				Back to Teams
 			</Link>
+			{label}
 			<h1>{team.name}</h1>
 			{team.city}, {team.state}
 			<ul>

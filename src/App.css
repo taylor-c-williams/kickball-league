@@ -1,38 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Readex+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+/*
+ font-family: 'Lekton', sans-serif;
+font-family: 'Coiny', cursive;
+ */
+
+body {
+	margin: 25px;
+	font-family: 'Lekton', sans-serif;
+}
+
+h1 {
+	font-family: 'Coiny', cursive;
+	font-size: 4em;
+	color: #ff579f;
+}
+
 .App {
-  text-align: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+	color: #60935d;
+	margin: 5px;
+	text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:hover {
+	color: #ff579f;
 }
 
 .App-link {
-  color: #61dafb;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 5px;
+	font-size: 1.5em;
+	text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-link:hover {
+	color: #ff579f;
+}
+
+.App-link:active {
+	background-color: yellow;
 }

@@ -16,7 +16,6 @@ function App() {
 		<div className="App">
 			<Router>
 				<header>
-					Kickball
 					<NavLink to="/" className="App-link" exact>
 						Home
 					</NavLink>

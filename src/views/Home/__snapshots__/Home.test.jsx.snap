@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Home view accurately 1`] = `
+<div>
+  <div>
+    <section
+      class="kickyball-container"
+    >
+      <header
+        class="kickyball-header"
+      >
+        <h1>
+          Kickball League Directory! 
+        </h1>
+      </header>
+      <p
+        class="kickyball"
+      >
+        <a
+          href="/teams"
+        >
+          <img
+            alt="kickball with adorable turtle printed on it"
+            src="https://i5.walmartimages.com/asr/7cd32c12-dfff-4e90-983e-9dd712f11222.019e16ba07684ed951902a359a0f5504.jpeg"
+          />
+        </a>
+      </p>
+    </section>
+  </div>
+</div>
+`;

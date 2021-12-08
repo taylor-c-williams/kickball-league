@@ -11,9 +11,14 @@ Object {
         <h1>
           Ben E. Jetts
         </h1>
-        <p>
+        <h2>
           Pitcher
-        </p>
+        </h2>
+        <img
+          alt="an adorable frog faced kickyball"
+          src="https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg"
+          width="300px"
+        />
         <ul>
           <li>
             <a
@@ -38,9 +43,14 @@ Object {
       <h1>
         Ben E. Jetts
       </h1>
-      <p>
+      <h2>
         Pitcher
-      </p>
+      </h2>
+      <img
+        alt="an adorable frog faced kickyball"
+        src="https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg"
+        width="300px"
+      />
       <ul>
         <li>
           <a

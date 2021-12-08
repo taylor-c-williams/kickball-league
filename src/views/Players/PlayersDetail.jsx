@@ -18,7 +18,12 @@ export default function PlayersDetail() {
 	return (
 		<div className="content">
 			<h1>{player.name}</h1>
-			<p>{player.position}</p>
+			<h2>{player.position}</h2>
+			<img
+				width="300px"
+				src="https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg"
+				alt="an adorable frog faced kickyball"
+			/>
 			<ul>
 				<li>
 					<Link to={`/teams/${player.teams.id}`}>{player.teams.name}</Link>

@@ -10,7 +10,7 @@ export default function PlayersList() {
 	}, []);
 	console.log(players);
 	return (
-		<div>
+		<div className="content">
 			Players:
 			<ul>
 				{players.map((player) => {

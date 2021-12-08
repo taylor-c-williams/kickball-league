@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Readex+Pro:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
 /*
  font-family: 'Lekton', sans-serif;
 font-family: 'Coiny', cursive;
@@ -34,11 +34,15 @@ a:hover {
 	color: #ff579f;
 }
 
+a:active {
+	background-color: yellow;
+}
+
 .App-link {
 	margin-left: 10px;
 	margin-right: 10px;
 	padding: 5px;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	text-decoration: none;
 }
 
@@ -48,4 +52,24 @@ a:hover {
 
 .App-link:active {
 	background-color: yellow;
+}
+
+ul {
+	list-style: none;
+	list-style-position: outside;
+	margin-left: -20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+li {
+	padding: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+li a {
+	font-weight: normal;
 }

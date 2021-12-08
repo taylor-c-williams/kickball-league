@@ -16,14 +16,7 @@ export default function PlayersDetail() {
 	if (loading) return <span className="loading">Loading...</span>;
 
 	return (
-		<div>
-			<Link to="/teams" className="App-link">
-				Back to Teams
-			</Link>
-			|
-			<Link to="/players" className="App-link">
-				Back to Players
-			</Link>
+		<div className="content">
 			<h1>{player.name}</h1>
 			<ul>
 				<li>{player.position}</li>
@@ -32,6 +25,15 @@ export default function PlayersDetail() {
 				</li>
 				<li>
 					{player.teams.city}, {player.teams.state}
+				</li>
+				<li>
+					<Link to="/teams" className="App-link">
+						Back to Teams
+					</Link>
+					|
+					<Link to="/players" className="App-link">
+						Back to Players
+					</Link>
 				</li>
 			</ul>
 		</div>

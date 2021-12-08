@@ -16,7 +16,7 @@ export default function TeamDetail() {
 	if (loading) return <span className="loading">Loading...</span>;
 
 	return (
-		<div>
+		<div className="content">
 			<Link to="/teams" className="App-link">
 				Back to Teams
 			</Link>

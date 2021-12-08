@@ -9,7 +9,7 @@ export default function TeamList() {
 		getTeams().then((res) => setTeams(res));
 	}, []);
 	return (
-		<div>
+		<div className="content">
 			Teams:
 			<ul>
 				{teams.map((team) => {

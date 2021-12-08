@@ -1,16 +1,28 @@
 .kickyball {
-	position: relative;
-	top: 30%;
-	z-index: 0;
+	margin-bottom: -25px;
 }
 
 .kickyball-header {
-	position: relative;
-	z-index: 1;
+	margin-bottom: -50px;
+	margin-top: -5px;
+	/* position: relative;
+	z-index: 1; */
 }
 
 .kickyball-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+h1 {
+	margin: 35px;
+	text-shadow: -5px 5px #b3dba9;
+}
+
+footer {
+	position: relative;
+	z-index: 1;
+	color: darkgrey;
 }

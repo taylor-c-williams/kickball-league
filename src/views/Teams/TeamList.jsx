@@ -10,7 +10,7 @@ export default function TeamList() {
 	}, []);
 	return (
 		<div className="content">
-			Teams:
+			<h1>Teams:</h1>
 			<ul>
 				{teams.map((team) => {
 					return (

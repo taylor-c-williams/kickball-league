@@ -17,10 +17,6 @@ export default function Home() {
 			https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg */}
 				</p>
 			</section>
-			<footer>
-				<Link to="/teams">Browse by Team</Link> |
-				<Link to="/players">Browse by Player</Link>
-			</footer>
 		</div>
 	);
 }

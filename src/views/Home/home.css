@@ -20,9 +20,3 @@ h1 {
 	margin: 35px;
 	text-shadow: -5px 5px #b3dba9;
 }
-
-footer {
-	position: relative;
-	z-index: 1;
-	color: darkgrey;
-}

@@ -17,9 +17,6 @@ export default function TeamDetail() {
 
 	return (
 		<div className="content">
-			<Link to="/teams" className="App-link">
-				Back to Teams
-			</Link>
 			<h1>{team.name}</h1>
 			{team.city}, {team.state}
 			<ul>

@@ -4,15 +4,13 @@ import {
 	Route,
 	NavLink,
 } from 'react-router-dom';
-import Home from './views/Home/Home';
-import TeamDetail from './views/Teams/TeamDetail';
-import TeamList from './views/Teams/TeamList';
-import PlayersDetail from './views/Players/PlayersDetail';
-import PlayersList from './views/Players/PlayersList';
-import Footer from './components/Footer';
-import './App.css';
+import Home from '../views/Home/Home';
+import TeamDetail from '../views/Teams/TeamDetail';
+import TeamList from '../views/Teams/TeamList';
+import PlayersDetail from '../views/Players/PlayersDetail';
+import PlayersList from '../views/Players/PlayersList';
 
-function App() {
+export default function Nav() {
 	return (
 		<div className="App">
 			<Router>
@@ -35,10 +33,7 @@ function App() {
 					<Route exact path="/players" component={PlayersList} />
 					<Route exact path="/players/:id" component={PlayersDetail} />
 				</Switch>
-				<Footer />
 			</Router>
 		</div>
 	);
 }
-
-export default App;

@@ -11,7 +11,7 @@ export default function PlayersList() {
 	console.log(players);
 	return (
 		<div className="content">
-			Players:
+			<h1>Players</h1>
 			<ul>
 				{players.map((player) => {
 					return (

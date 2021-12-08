@@ -18,22 +18,13 @@ export default function PlayersDetail() {
 	return (
 		<div className="content">
 			<h1>{player.name}</h1>
+			<p>{player.position}</p>
 			<ul>
-				<li>{player.position}</li>
 				<li>
 					<Link to={`/teams/${player.teams.id}`}>{player.teams.name}</Link>
 				</li>
 				<li>
 					{player.teams.city}, {player.teams.state}
-				</li>
-				<li>
-					<Link to="/teams" className="App-link">
-						Back to Teams
-					</Link>
-					|
-					<Link to="/players" className="App-link">
-						Back to Players
-					</Link>
 				</li>
 			</ul>
 		</div>

@@ -5,27 +5,16 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        <a
-          class="App-link"
-          href="/teams"
-        >
-          Back to Teams
-        </a>
-        |
-        <a
-          class="App-link"
-          href="/players"
-        >
-          Back to Players
-        </a>
+      <div
+        class="content"
+      >
         <h1>
           Ben E. Jetts
         </h1>
+        <p>
+          Pitcher
+        </p>
         <ul>
-          <li>
-            Pitcher
-          </li>
           <li>
             <a
               href="/teams/1"
@@ -43,27 +32,16 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <div>
-      <a
-        class="App-link"
-        href="/teams"
-      >
-        Back to Teams
-      </a>
-      |
-      <a
-        class="App-link"
-        href="/players"
-      >
-        Back to Players
-      </a>
+    <div
+      class="content"
+    >
       <h1>
         Ben E. Jetts
       </h1>
+      <p>
+        Pitcher
+      </p>
       <ul>
-        <li>
-          Pitcher
-        </li>
         <li>
           <a
             href="/teams/1"

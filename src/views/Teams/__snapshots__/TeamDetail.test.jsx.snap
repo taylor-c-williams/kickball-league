@@ -5,13 +5,9 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        <a
-          class="App-link"
-          href="/teams"
-        >
-          Back to Teams
-        </a>
+      <div
+        class="content"
+      >
         <h1>
           Bridge City Sneakers
         </h1>
@@ -60,13 +56,9 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <div>
-      <a
-        class="App-link"
-        href="/teams"
-      >
-        Back to Teams
-      </a>
+    <div
+      class="content"
+    >
       <h1>
         Bridge City Sneakers
       </h1>

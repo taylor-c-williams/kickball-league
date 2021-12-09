@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { getTeams } from '../../services/teams';
 
 export default function TeamList() {
@@ -8,6 +8,7 @@ export default function TeamList() {
 	useEffect(() => {
 		getTeams().then((res) => setTeams(res));
 	}, []);
+	console.log(teams);
 	return (
 		<div className="content">
 			<h1>Teams:</h1>
@@ -22,9 +23,7 @@ export default function TeamList() {
 					);
 				})}
 			</ul>
-			<Router>
-				<Link to="/create">Create New Team</Link>
-			</Router>
+			<Link to="/create">Create New Team</Link>
 		</div>
 	);
 }

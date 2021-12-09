@@ -15,6 +15,9 @@ export default function EditTeam() {
 	useEffect(() => {
 		getTeamById(id)
 			.then((res) => setTeam(res))
+			.then((res) => setName(res))
+			.then((res) => setCity(res))
+			.then((res) => setState(res))
 			.finally(() => setLoading(false));
 	}, [id]);
 
@@ -29,6 +32,7 @@ export default function EditTeam() {
 		<div>
 			<h1>Edit Team</h1>
 			<EditForm
+				id={id}
 				name={team.name}
 				city={team.city}
 				state={team.state}

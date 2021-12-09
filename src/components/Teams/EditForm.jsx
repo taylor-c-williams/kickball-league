@@ -1,6 +1,3 @@
-// import { useState, useEffect } from 'react';
-// import { useParams } from 'react-router-dom';
-// import { getTeamById } from '../../services/teams';
 export default function EditForm({
 	name,
 	city,
@@ -10,20 +7,14 @@ export default function EditForm({
 	setCity,
 	setState,
 }) {
-	// const [team, setTeam] = useState(null);
-	// const [loading, setLoading] = useState(true);
-	// const { id } = useParams();
-
-	// useEffect(() => {
-	// 	getTeamById(id)
-	// 		.then((res) => setTeam(res))
-	// 		.finally(() => setLoading(false));
-	// }, [id]);
-	// if (loading) return <span className="loading">Loading...</span>;
-
 	return (
 		<div>
 			<h1>{name}</h1>
+
+			{/* 
+		defaultvalue acts as a placeholder, if each entry is not changed, that filed
+		gets updated as blank  
+		*/}
 
 			<fieldset>
 				<legend>Edit stuff</legend>
@@ -33,8 +24,8 @@ export default function EditForm({
 						id="name"
 						name="name"
 						type="text"
-						value={name}
-						placeholder={name}
+						defaultValue={name}
+						required
 						onChange={({ target }) => setName(target.value)}
 					/>
 
@@ -43,8 +34,8 @@ export default function EditForm({
 						id="city"
 						name="city"
 						type="text"
-						value={city}
-						placeholder={city}
+						defaultValue={city}
+						required
 						onChange={({ target }) => setCity(target.value)}
 					/>
 
@@ -53,8 +44,8 @@ export default function EditForm({
 						id="state"
 						name="state"
 						type="text"
-						value={state}
-						placeholder={state}
+						defaultValue={state}
+						required
 						onChange={({ target }) => setState(target.value)}
 					/>
 					<input type="submit" aria-label="Add New Team" value="Update Team" />

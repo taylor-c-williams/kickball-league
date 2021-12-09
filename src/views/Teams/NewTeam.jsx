@@ -29,3 +29,5 @@ export default function NewTeam() {
 		</div>
 	);
 }
+
+// Clicking create new team does not load /create but does update URL and loads on refresh

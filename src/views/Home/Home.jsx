@@ -1,6 +1,5 @@
 import './home.css';
 import { Link } from 'react-router-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 export default function Home() {
 	return (
@@ -10,16 +9,12 @@ export default function Home() {
 					<h1>Kickball League Directory! </h1>
 				</header>
 				<p className="kickyball">
-					<Router>
-						<Link to="/teams" className="ball">
-							<img
-								src="https://i5.walmartimages.com/asr/7cd32c12-dfff-4e90-983e-9dd712f11222.019e16ba07684ed951902a359a0f5504.jpeg"
-								alt="kickball with adorable turtle printed on it"
-							/>
-						</Link>
-					</Router>
-					{/* another incredibly cute kickball in case I or anyone else need it::
-			https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg */}
+					<Link to="/teams" className="ball">
+						<img
+							src="https://i5.walmartimages.com/asr/7cd32c12-dfff-4e90-983e-9dd712f11222.019e16ba07684ed951902a359a0f5504.jpeg"
+							alt="kickball with adorable turtle printed on it"
+						/>
+					</Link>
 				</p>
 			</section>
 		</div>

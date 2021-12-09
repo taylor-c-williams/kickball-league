@@ -1,19 +1,17 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
-import TeamDetail from './TeamDetail';
+import NewTeam from '../NewTeam';
 
 it('should render a detailed view of an individual team', async () => {
 	const container = render(
-		<MemoryRouter initialEntries={['/teams/1']}>
-			<Route path="/teams/:id">
-				<TeamDetail />
+		<MemoryRouter initialEntries={['/create']}>
+			<Route path="/create">
+				<NewTeam />
 			</Route>
 		</MemoryRouter>
 	);
 
-	screen.getByText('Loading...');
-
-	const textEntry = await screen.findByText('Pitcher', {
+	const textEntry = await screen.findByText('Create stuff', {
 		exact: false,
 	});
 

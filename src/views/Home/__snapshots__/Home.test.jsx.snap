@@ -17,6 +17,7 @@ exports[`renders the Home view accurately 1`] = `
         class="kickyball"
       >
         <a
+          class="ball"
           href="/teams"
         >
           <img

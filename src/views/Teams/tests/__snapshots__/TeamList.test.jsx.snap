@@ -9,6 +9,11 @@ exports[`renders TeamList elements 1`] = `
       Teams:
     </h1>
     <ul />
+    <a
+      href="/create"
+    >
+      Create New Team
+    </a>
   </div>
 </div>
 `;

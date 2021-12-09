@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
-import PlayersDetail from './PlayersDetail';
+import TeamDetail from '../TeamDetail';
 
-it('should render a detailed view of an individual player', async () => {
-	const deets = render(
-		<MemoryRouter initialEntries={['/players/1']}>
-			<Route path="/players/:id">
-				<PlayersDetail />
+it('should render a detailed view of an individual team', async () => {
+	const container = render(
+		<MemoryRouter initialEntries={['/teams/1']}>
+			<Route path="/teams/:id">
+				<TeamDetail />
 			</Route>
 		</MemoryRouter>
 	);
@@ -17,6 +17,6 @@ it('should render a detailed view of an individual player', async () => {
 		exact: false,
 	});
 
-	expect(deets).toMatchSnapshot();
+	expect(container).toMatchSnapshot();
 	expect(textEntry).toBeInTheDocument();
 });

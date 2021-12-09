@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { getTeamById } from '../../services/teams';
+// import { useState, useEffect } from 'react';
+// import { useParams } from 'react-router-dom';
+// import { getTeamById } from '../../services/teams';
 export default function EditForm({
 	name,
 	city,

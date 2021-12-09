@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import TeamList from './TeamList';
+import TeamList from '../TeamList';
 
 it('renders TeamList elements', () => {
 	const { container } = render(<TeamList />);
 
-	const textElement = screen.getByText('teams', { exact: false });
+	const textElement = screen.getByText('Teams', { exact: false });
 	expect(textElement).toBeInTheDocument();
 	expect(container).toMatchSnapshot();
 });

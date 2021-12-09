@@ -5,105 +5,19 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="content"
+      <span
+        class="loading"
       >
-        <h1>
-          Bridge City Sneakers
-        </h1>
-        Portland
-        , 
-        OR
-        <ul>
-          <a
-            href="/players/1"
-          >
-            <li>
-              Pitcher
-               - 
-              Ben E. Jetts
-            </li>
-          </a>
-          <a
-            href="/players/2"
-          >
-            <li>
-              Catcher
-               - 
-              Hans Olo
-            </li>
-          </a>
-          <a
-            href="/players/3"
-          >
-            <li>
-              Outfield
-               - 
-              Ron Long
-            </li>
-          </a>
-          <a
-            href="/players/4"
-          >
-            <li>
-              Shortstop
-               - 
-              Shorty Biggum
-            </li>
-          </a>
-        </ul>
-      </div>
+        Loading...
+      </span>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="content"
+    <span
+      class="loading"
     >
-      <h1>
-        Bridge City Sneakers
-      </h1>
-      Portland
-      , 
-      OR
-      <ul>
-        <a
-          href="/players/1"
-        >
-          <li>
-            Pitcher
-             - 
-            Ben E. Jetts
-          </li>
-        </a>
-        <a
-          href="/players/2"
-        >
-          <li>
-            Catcher
-             - 
-            Hans Olo
-          </li>
-        </a>
-        <a
-          href="/players/3"
-        >
-          <li>
-            Outfield
-             - 
-            Ron Long
-          </li>
-        </a>
-        <a
-          href="/players/4"
-        >
-          <li>
-            Shortstop
-             - 
-            Shorty Biggum
-          </li>
-        </a>
-      </ul>
-    </div>
+      Loading...
+    </span>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

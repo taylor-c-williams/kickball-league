@@ -5,67 +5,19 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="content"
+      <span
+        class="loading"
       >
-        <h1>
-          Ben E. Jetts
-        </h1>
-        <h2>
-          Pitcher
-        </h2>
-        <img
-          alt="an adorable frog faced kickyball"
-          src="https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg"
-          width="300px"
-        />
-        <ul>
-          <li>
-            <a
-              href="/teams/1"
-            >
-              Bridge City Sneakers
-            </a>
-          </li>
-          <li>
-            Portland
-            , 
-            OR
-          </li>
-        </ul>
-      </div>
+        Loading...
+      </span>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="content"
+    <span
+      class="loading"
     >
-      <h1>
-        Ben E. Jetts
-      </h1>
-      <h2>
-        Pitcher
-      </h2>
-      <img
-        alt="an adorable frog faced kickyball"
-        src="https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg"
-        width="300px"
-      />
-      <ul>
-        <li>
-          <a
-            href="/teams/1"
-          >
-            Bridge City Sneakers
-          </a>
-        </li>
-        <li>
-          Portland
-          , 
-          OR
-        </li>
-      </ul>
-    </div>
+      Loading...
+    </span>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

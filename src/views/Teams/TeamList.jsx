@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 import { getTeams } from '../../services/teams';
 
 export default function TeamList() {
@@ -22,7 +22,9 @@ export default function TeamList() {
 					);
 				})}
 			</ul>
-			<Link to="/create">Create New Team</Link>
+			<Router>
+				<Link to="/create">Create New Team</Link>
+			</Router>
 		</div>
 	);
 }

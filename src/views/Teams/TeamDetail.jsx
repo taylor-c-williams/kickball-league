@@ -30,6 +30,7 @@ export default function TeamDetail() {
 					);
 				})}
 			</ul>
+			<Link to={`/edit/${team.id}`}>Update Team</Link>
 		</div>
 	);
 }

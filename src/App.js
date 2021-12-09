@@ -9,6 +9,8 @@ import TeamDetail from './views/Teams/TeamDetail';
 import TeamList from './views/Teams/TeamList';
 import PlayersDetail from './views/Players/PlayersDetail';
 import PlayersList from './views/Players/PlayersList';
+import NewTeam from './views/Teams/NewTeam';
+import EditTeam from './views/Teams/EditTeam';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -34,6 +36,8 @@ function App() {
 					<Route exact path="/teams/:id" component={TeamDetail} />
 					<Route exact path="/players" component={PlayersList} />
 					<Route exact path="/players/:id" component={PlayersDetail} />
+					<Route exact path="/create" component={NewTeam} />
+					<Route exact path="/edit/:id" component={EditTeam} />
 				</Switch>
 				<Footer />
 			</Router>

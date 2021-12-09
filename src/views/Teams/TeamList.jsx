@@ -22,6 +22,7 @@ export default function TeamList() {
 					);
 				})}
 			</ul>
+			<Link to="/create">Create New Team</Link>
 		</div>
 	);
 }

@@ -12,7 +12,7 @@ export default function NewTeam() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		const res = await createTeam({ name, city, state });
-		history.pushState(`/teams/${res[0].id}`);
+		history.push(`/teams/${res[0].id}`);
 	};
 	return (
 		<div>

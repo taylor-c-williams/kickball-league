@@ -1,4 +1,7 @@
-export default function NewForm({
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { getTeamById } from '../../services/teams';
+export default function EditForm({
 	name,
 	city,
 	state,
@@ -7,10 +10,23 @@ export default function NewForm({
 	setCity,
 	setState,
 }) {
+	// const [team, setTeam] = useState(null);
+	// const [loading, setLoading] = useState(true);
+	// const { id } = useParams();
+
+	// useEffect(() => {
+	// 	getTeamById(id)
+	// 		.then((res) => setTeam(res))
+	// 		.finally(() => setLoading(false));
+	// }, [id]);
+	// if (loading) return <span className="loading">Loading...</span>;
+
 	return (
 		<div>
+			<h1>{name}</h1>
+
 			<fieldset>
-				<legend>Create stuff</legend>
+				<legend>Edit stuff</legend>
 				<form onSubmit={handleSubmit}>
 					<label htmlFor="name">Team Name:</label>
 					<input
@@ -18,6 +34,7 @@ export default function NewForm({
 						name="name"
 						type="text"
 						value={name}
+						placeholder={name}
 						onChange={({ target }) => setName(target.value)}
 					/>
 
@@ -27,6 +44,7 @@ export default function NewForm({
 						name="city"
 						type="text"
 						value={city}
+						placeholder={city}
 						onChange={({ target }) => setCity(target.value)}
 					/>
 
@@ -36,9 +54,10 @@ export default function NewForm({
 						name="state"
 						type="text"
 						value={state}
+						placeholder={state}
 						onChange={({ target }) => setState(target.value)}
 					/>
-					<input type="submit" aria-label="Add New Team" value="Add New Team" />
+					<input type="submit" aria-label="Add New Team" value="Update Team" />
 				</form>
 			</fieldset>
 		</div>

@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { getTeamById } from '../../services/teams';
+import { Link, useParams, useHistory } from 'react-router-dom';
+import { getTeamById, deleteTeamById } from '../../services/teams';
 
 export default function TeamDetail() {
 	const { id } = useParams();
 	const [team, setTeam] = useState(null);
 	const [loading, setLoading] = useState(true);
+	const history = useHistory();
 
 	useEffect(() => {
 		getTeamById(id)
@@ -14,6 +15,11 @@ export default function TeamDetail() {
 	}, [id]);
 
 	if (loading) return <span className="loading">Loading...</span>;
+
+	const handleDelete = async ({ id, name }) => {
+		await deleteTeamById(id);
+		history.push(`/teams/`);
+	};
 
 	return (
 		<div className="content">
@@ -31,6 +37,13 @@ export default function TeamDetail() {
 				})}
 			</ul>
 			<Link to={`/edit/${team.id}`}>Update Team</Link>
+			<button
+				type="button"
+				aria-label={`Delete ${team.name}`}
+				onClick={() => handleDelete({ id: team.id, name: team.name })}
+			>
+				Delete
+			</button>
 		</div>
 	);
 }

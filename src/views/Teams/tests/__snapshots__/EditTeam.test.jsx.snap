@@ -1,18 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render accurately the create team view and component 1`] = `
+exports[`should render accurately the edit team view and form component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div>
         <h1>
-          Create New Team
+          Edit Team
         </h1>
         <div>
+          <h1>
+            chummy
+          </h1>
           <fieldset>
             <legend>
-              Create stuff
+              Edit stuff
             </legend>
             <form>
               <label
@@ -23,8 +26,9 @@ Object {
               <input
                 id="name"
                 name="name"
+                required=""
                 type="text"
-                value=""
+                value="chummy"
               />
               <label
                 for="city"
@@ -34,8 +38,9 @@ Object {
               <input
                 id="city"
                 name="city"
+                required=""
                 type="text"
-                value=""
+                value="bongo"
               />
               <label
                 for="state"
@@ -45,13 +50,14 @@ Object {
               <input
                 id="state"
                 name="state"
+                required=""
                 type="text"
-                value=""
+                value="bongo"
               />
               <input
                 aria-label="Add New Team"
                 type="submit"
-                value="Add New Team"
+                value="Update Team"
               />
             </form>
           </fieldset>
@@ -62,12 +68,15 @@ Object {
   "container": <div>
     <div>
       <h1>
-        Create New Team
+        Edit Team
       </h1>
       <div>
+        <h1>
+          chummy
+        </h1>
         <fieldset>
           <legend>
-            Create stuff
+            Edit stuff
           </legend>
           <form>
             <label
@@ -78,8 +87,9 @@ Object {
             <input
               id="name"
               name="name"
+              required=""
               type="text"
-              value=""
+              value="chummy"
             />
             <label
               for="city"
@@ -89,8 +99,9 @@ Object {
             <input
               id="city"
               name="city"
+              required=""
               type="text"
-              value=""
+              value="bongo"
             />
             <label
               for="state"
@@ -100,13 +111,14 @@ Object {
             <input
               id="state"
               name="state"
+              required=""
               type="text"
-              value=""
+              value="bongo"
             />
             <input
               aria-label="Add New Team"
               type="submit"
-              value="Add New Team"
+              value="Update Team"
             />
           </form>
         </fieldset>

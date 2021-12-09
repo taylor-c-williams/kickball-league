@@ -1,17 +1,17 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
-import NewTeam from '../NewTeam';
+import EditTeam from '../EditTeam';
 
-it('should render accurately the create team view and component', async () => {
+it('should render accurately the edit team view and form component', async () => {
 	const container = render(
-		<MemoryRouter initialEntries={['/create']}>
-			<Route path="/create">
-				<NewTeam />
+		<MemoryRouter initialEntries={['/edit/1']}>
+			<Route path="/edit/:id">
+				<EditTeam />
 			</Route>
 		</MemoryRouter>
 	);
 
-	const textEntry = await screen.findByText('Create stuff', {
+	const textEntry = await screen.findByText('Edit stuff', {
 		exact: false,
 	});
 

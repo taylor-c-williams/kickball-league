@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render accurately the edit team view and form component 1`] = `
+exports[`should render accurately the edit player view and form component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div>
         <h1>
-          Edit Team
+          Edit Player
         </h1>
         <div>
           <h1>
-            team name
+            player name
           </h1>
           <fieldset>
             <legend>
@@ -21,43 +21,31 @@ Object {
               <label
                 for="name"
               >
-                Team Name:
+                Player Name:
               </label>
               <input
                 id="name"
                 name="name"
                 required=""
                 type="text"
-                value="team name"
+                value="player name"
               />
               <label
-                for="city"
+                for="position"
               >
-                City:
+                Player Position:
               </label>
               <input
-                id="city"
-                name="city"
+                id="position"
+                name="position"
                 required=""
                 type="text"
-                value="team city"
-              />
-              <label
-                for="state"
-              >
-                State:
-              </label>
-              <input
-                id="state"
-                name="state"
-                required=""
-                type="text"
-                value="team state"
+                value="player position"
               />
               <input
-                aria-label="Update"
+                aria-label="Update Player"
                 type="submit"
-                value="Update Team"
+                value="Update Player"
               />
             </form>
           </fieldset>
@@ -68,11 +56,11 @@ Object {
   "container": <div>
     <div>
       <h1>
-        Edit Team
+        Edit Player
       </h1>
       <div>
         <h1>
-          team name
+          player name
         </h1>
         <fieldset>
           <legend>
@@ -82,43 +70,31 @@ Object {
             <label
               for="name"
             >
-              Team Name:
+              Player Name:
             </label>
             <input
               id="name"
               name="name"
               required=""
               type="text"
-              value="team name"
+              value="player name"
             />
             <label
-              for="city"
+              for="position"
             >
-              City:
+              Player Position:
             </label>
             <input
-              id="city"
-              name="city"
+              id="position"
+              name="position"
               required=""
               type="text"
-              value="team city"
-            />
-            <label
-              for="state"
-            >
-              State:
-            </label>
-            <input
-              id="state"
-              name="state"
-              required=""
-              type="text"
-              value="team state"
+              value="player position"
             />
             <input
-              aria-label="Update"
+              aria-label="Update Player"
               type="submit"
-              value="Update Team"
+              value="Update Player"
             />
           </form>
         </fieldset>

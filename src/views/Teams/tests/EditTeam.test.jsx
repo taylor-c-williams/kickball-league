@@ -4,8 +4,8 @@ import EditTeam from '../EditTeam';
 
 it('should render accurately the edit team view and form component', async () => {
 	const container = render(
-		<MemoryRouter initialEntries={['/edit/1']}>
-			<Route path="/edit/:id">
+		<MemoryRouter initialEntries={['/editTeam/1']}>
+			<Route path="/editTeam/:id">
 				<EditTeam />
 			</Route>
 		</MemoryRouter>

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import PlayersList from './PlayersList';
+import PlayersList from '../PlayersList';
 
 it('renders PlayersList elements', () => {
 	const { container } = render(<PlayersList />);

@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
-import PlayersDetail from './PlayersDetail';
+import PlayersDetail from '../PlayersDetail';
 
 it('should render a detailed view of an individual player', async () => {
 	const deets = render(

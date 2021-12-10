@@ -1,13 +1,9 @@
 export default function PlayerEditForm({
+	position,
 	name,
-	city,
-	state,
-	team,
 	handleSubmit,
 	setName,
-	setCity,
-	setState,
-	setTeam,
+	setPosition,
 }) {
 	return (
 		<div>
@@ -21,39 +17,19 @@ export default function PlayerEditForm({
 						id="name"
 						name="name"
 						type="text"
-						defaultValue={name}
+						value={name}
 						required
 						onChange={({ target }) => setName(target.value)}
 					/>
 
-					<label htmlFor="team">Team:</label>
+					<label htmlFor="position">Player Position:</label>
 					<input
-						id="team"
-						name="team"
+						id="position"
+						name="position"
 						type="text"
-						defaultValue={team}
+						value={position}
 						required
-						onChange={({ target }) => setName(target.value)}
-					/>
-
-					<label htmlFor="city">City:</label>
-					<input
-						id="city"
-						name="city"
-						type="text"
-						defaultValue={city}
-						required
-						onChange={({ target }) => setCity(target.value)}
-					/>
-
-					<label htmlFor="state">State:</label>
-					<input
-						id="state"
-						name="state"
-						type="text"
-						defaultValue={state}
-						required
-						onChange={({ target }) => setState(target.value)}
+						onChange={({ target }) => setPosition(target.value)}
 					/>
 					<input
 						type="submit"

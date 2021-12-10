@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { getPlayerById } from '../../services/players';
+import { Link, useParams, useHistory } from 'react-router-dom';
+import { getPlayerById, deletePlayerById } from '../../services/players';
 
 export default function PlayersDetail() {
 	const { id } = useParams();
 	const [player, setPlayer] = useState(null);
 	const [loading, setLoading] = useState(true);
+	const history = useHistory();
 
 	useEffect(() => {
 		getPlayerById(id)
@@ -14,6 +15,11 @@ export default function PlayersDetail() {
 	}, [id]);
 
 	if (loading) return <span className="loading">Loading...</span>;
+
+	const handleDelete = async ({ id, name }) => {
+		await deletePlayerById(id);
+		history.push(`/teams/`);
+	};
 
 	return (
 		<div className="content">
@@ -32,7 +38,14 @@ export default function PlayersDetail() {
 					{player.teams.city}, {player.teams.state}
 				</li>
 			</ul>
-			<Link to={`/edit/${player.id}`}>Update Player</Link>
+			<Link to={`/editPlayer/${player.id}`}>Update Player</Link>
+			<button
+				type="button"
+				aria-label={`Delete ${player.name}`}
+				onClick={() => handleDelete({ id: player.id, name: player.name })}
+			>
+				Delete Player
+			</button>
 		</div>
 	);
 }

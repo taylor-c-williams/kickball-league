@@ -6,7 +6,6 @@ export default function TeamEditForm({
 	setName,
 	setCity,
 	setState,
-	team,
 }) {
 	return (
 		<div>

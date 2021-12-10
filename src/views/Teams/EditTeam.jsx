@@ -20,9 +20,6 @@ export default function EditTeam() {
 				setCity(res.city);
 				setState(res.state);
 			})
-			// .then((res) => setName(res))
-			// .then((res) => setCity(res))
-			// .then((res) => setState(res))
 			.finally(() => setLoading(false));
 	}, [id]);
 
@@ -37,7 +34,6 @@ export default function EditTeam() {
 		<div>
 			<h1>Edit Team</h1>
 			<EditForm
-				team={team}
 				name={name}
 				city={city}
 				state={state}

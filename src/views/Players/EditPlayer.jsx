@@ -1,25 +1,21 @@
 import { useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
-import EditForm from '../../components/Players/PlayerEditForm';
+import PlayerEditForm from '../../components/Players/PlayerEditForm';
 import { updatePlayerById, getPlayerById } from '../../services/players';
 
 export default function EditPlayer() {
 	const { id } = useParams();
-	const [team, setTeam] = useState(null);
 	const [name, setName] = useState('');
-	const [city, setCity] = useState('');
-	const [state, setState] = useState('');
-	const [player, setPlayer] = useState('');
+	const [position, setPosition] = useState('');
 	const [loading, setLoading] = useState(true);
 	const history = useHistory();
 
 	useEffect(() => {
 		getPlayerById(id)
-			.then((res) => setPlayer(res))
-			.then((res) => setTeam(res))
-			.then((res) => setName(res))
-			.then((res) => setCity(res))
-			.then((res) => setState(res))
+			.then((res) => {
+				setPosition(res.position);
+				setName(res.name);
+			})
 			.finally(() => setLoading(false));
 	}, [id]);
 
@@ -27,24 +23,20 @@ export default function EditPlayer() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		const res = await updatePlayerById(id, { name, city, state, team });
+		const res = await updatePlayerById(id, { name, position });
 		history.push(`/players/${res[0].id}`);
 	};
-	console.log(player);
+
 	return (
 		<div>
 			<h1>Edit Player</h1>
-			<EditForm
+			<PlayerEditForm
 				id={id}
-				name={player.name}
-				city={player.teams.city}
-				state={player.teams.state}
-				team={player.teams.name}
+				name={name}
+				position={position}
 				handleSubmit={handleSubmit}
-				setPlayer={setPlayer}
 				setName={setName}
-				setCity={setCity}
-				setState={setState}
+				setPosition={setPosition}
 			/>
 		</div>
 	);

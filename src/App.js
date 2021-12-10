@@ -13,6 +13,7 @@ import NewTeam from './views/Teams/NewTeam';
 import EditTeam from './views/Teams/EditTeam';
 import Footer from './components/Footer';
 import './App.css';
+import EditPlayer from './views/Players/EditPlayer';
 
 function App() {
 	return (
@@ -34,10 +35,11 @@ function App() {
 					<Route exact path="/" component={Home} />
 					<Route exact path="/teams" component={TeamList} />
 					<Route exact path="/teams/:id" component={TeamDetail} />
-					<Route exact path="/players" component={PlayersList} />
-					<Route exact path="/players/:id" component={PlayersDetail} />
 					<Route exact path="/createTeam" component={NewTeam} />
 					<Route exact path="/editTeam/:id" component={EditTeam} />
+					<Route exact path="/players" component={PlayersList} />
+					<Route exact path="/players/:id" component={PlayersDetail} />
+					<Route exact path="/editPlayer/:id" component={EditPlayer} />
 				</Switch>
 				<Footer />
 			</Router>

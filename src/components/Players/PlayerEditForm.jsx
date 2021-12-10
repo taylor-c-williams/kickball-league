@@ -1,30 +1,37 @@
-export default function EditForm({
+export default function PlayerEditForm({
 	name,
 	city,
 	state,
+	team,
 	handleSubmit,
 	setName,
 	setCity,
 	setState,
+	setTeam,
 }) {
 	return (
 		<div>
 			<h1>{name}</h1>
 
-			{/* 
-		defaultvalue acts as a placeholder, if each entry is not changed, that filed
-		gets updated as blank  
-		*/}
-
 			<fieldset>
 				<legend>Edit stuff</legend>
 				<form onSubmit={handleSubmit}>
-					<label htmlFor="name">Team Name:</label>
+					<label htmlFor="name">Player Name:</label>
 					<input
 						id="name"
 						name="name"
 						type="text"
 						defaultValue={name}
+						required
+						onChange={({ target }) => setName(target.value)}
+					/>
+
+					<label htmlFor="team">Team:</label>
+					<input
+						id="team"
+						name="team"
+						type="text"
+						defaultValue={team}
 						required
 						onChange={({ target }) => setName(target.value)}
 					/>
@@ -48,7 +55,11 @@ export default function EditForm({
 						required
 						onChange={({ target }) => setState(target.value)}
 					/>
-					<input type="submit" aria-label="Add New Team" value="Update Team" />
+					<input
+						type="submit"
+						aria-label="Update Player"
+						value="Update Player"
+					/>
 				</form>
 			</fieldset>
 		</div>

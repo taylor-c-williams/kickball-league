@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import NewForm from '../../components/Teams/NewForm';
+import NewForm from '../../components/Teams/TeamNewForm';
 import { createTeam } from '../../services/teams';
 
 export default function NewTeam() {

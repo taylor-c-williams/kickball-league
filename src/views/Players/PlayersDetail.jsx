@@ -32,6 +32,7 @@ export default function PlayersDetail() {
 					{player.teams.city}, {player.teams.state}
 				</li>
 			</ul>
+			<Link to={`/edit/${player.id}`}>Update Player</Link>
 		</div>
 	);
 }

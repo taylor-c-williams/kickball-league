@@ -23,7 +23,7 @@ export default function TeamList() {
 					);
 				})}
 			</ul>
-			<Link to="/create">Create New Team</Link>
+			<Link to="/createTeam">Create New Team</Link>
 		</div>
 	);
 }

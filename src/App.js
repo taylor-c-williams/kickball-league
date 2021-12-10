@@ -36,8 +36,8 @@ function App() {
 					<Route exact path="/teams/:id" component={TeamDetail} />
 					<Route exact path="/players" component={PlayersList} />
 					<Route exact path="/players/:id" component={PlayersDetail} />
-					<Route exact path="/create" component={NewTeam} />
-					<Route exact path="/edit/:id" component={EditTeam} />
+					<Route exact path="/createTeam" component={NewTeam} />
+					<Route exact path="/editTeam/:id" component={EditTeam} />
 				</Switch>
 				<Footer />
 			</Router>

@@ -36,7 +36,7 @@ export default function TeamDetail() {
 					);
 				})}
 			</ul>
-			<Link to={`/edit/${team.id}`}>Update Team</Link>
+			<Link to={`/editTeam/${team.id}`}>Update Team</Link>
 			<button
 				type="button"
 				aria-label={`Delete ${team.name}`}

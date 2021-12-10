@@ -10,7 +10,7 @@ exports[`renders TeamList elements 1`] = `
     </h1>
     <ul />
     <a
-      href="/create"
+      href="/createTeam"
     >
       Create New Team
     </a>

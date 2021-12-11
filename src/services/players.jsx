@@ -14,10 +14,10 @@ export async function getPlayerById(id) {
 	return parseData(request);
 }
 
-export async function updatePlayerById(id, { name, position }) {
+export async function updatePlayerById(id, { name, position, teamId }) {
 	const request = await client
 		.from('players')
-		.update({ name, position })
+		.update({ name, position, team_id: teamId })
 		.match({ id });
 	return parseData(request);
 }

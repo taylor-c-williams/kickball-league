@@ -6,9 +6,18 @@ exports[`renders PlayersList elements 1`] = `
     class="content"
   >
     <h1>
-      Players
+      Players 
     </h1>
-    <ul />
+    <ul>
+      <li>
+        <a
+          class="App-Link"
+          href="/players/3"
+        >
+          player name
+        </a>
+      </li>
+    </ul>
   </div>
 </div>
 `;

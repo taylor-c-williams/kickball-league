@@ -5,19 +5,73 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <span
-        class="loading"
+      <div
+        class="content"
       >
-        Loading...
-      </span>
+        <h1>
+          team name
+        </h1>
+        team city
+        , 
+        team state
+        <ul>
+          <a
+            href="/players/3"
+          >
+            <li>
+              player position
+               - 
+              player name
+            </li>
+          </a>
+        </ul>
+        <a
+          href="/editTeam/1"
+        >
+          Update Team
+        </a>
+        <button
+          aria-label="Delete team name"
+          type="button"
+        >
+          Delete
+        </button>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <span
-      class="loading"
+    <div
+      class="content"
     >
-      Loading...
-    </span>
+      <h1>
+        team name
+      </h1>
+      team city
+      , 
+      team state
+      <ul>
+        <a
+          href="/players/3"
+        >
+          <li>
+            player position
+             - 
+            player name
+          </li>
+        </a>
+      </ul>
+      <a
+        href="/editTeam/1"
+      >
+        Update Team
+      </a>
+      <button
+        aria-label="Delete team name"
+        type="button"
+      >
+        Delete
+      </button>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -4,11 +4,16 @@ import { getTeams } from '../../services/teams';
 
 export default function TeamList() {
 	const [teams, setTeams] = useState([]);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		getTeams().then((res) => setTeams(res));
+		getTeams()
+			.then((res) => setTeams(res))
+			.finally(() => setLoading(false));
 	}, []);
-	console.log(teams);
+
+	if (loading) return <span className="loading">Loading...</span>;
+
 	return (
 		<div className="content">
 			<h1>Teams:</h1>

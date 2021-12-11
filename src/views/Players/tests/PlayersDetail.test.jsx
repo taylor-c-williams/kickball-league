@@ -1,22 +1,31 @@
-import { render, screen } from '@testing-library/react';
+import {
+	waitForElementToBeRemoved,
+	render,
+	screen,
+} from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
 import PlayersDetail from '../PlayersDetail';
 
 it('should render a detailed view of an individual player', async () => {
-	const deets = render(
-		<MemoryRouter initialEntries={['/players/1']}>
+	const player = {
+		created_at: '2021-12-10T01:44:26+00:00',
+		id: 3,
+		name: 'player name',
+		position: 'player position',
+		team_id: 1,
+	};
+	const detail = render(
+		<MemoryRouter initialEntries={['/players/3']}>
 			<Route path="/players/:id">
-				<PlayersDetail />
+				<PlayersDetail player={player} />
 			</Route>
 		</MemoryRouter>
 	);
 
-	screen.getByText('Loading...');
+	await waitForElementToBeRemoved(() => screen.queryByText(/Loading.../i));
 
-	const textEntry = await screen.findByText('Loading...', {
-		exact: false,
-	});
+	const update = await screen.findByText(/update/i);
 
-	expect(deets).toMatchSnapshot();
-	expect(textEntry).toBeInTheDocument();
+	expect(detail).toMatchSnapshot();
+	expect(update).toBeInTheDocument();
 });

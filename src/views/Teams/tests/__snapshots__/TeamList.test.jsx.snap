@@ -8,7 +8,30 @@ exports[`renders TeamList elements 1`] = `
     <h1>
       Teams:
     </h1>
-    <ul />
+    <ul>
+      <li>
+        <a
+          class="App-link"
+          href="/teams/4"
+        />
+      </li>
+      <li>
+        <a
+          class="App-link"
+          href="/teams/2"
+        >
+          Taylor C Williams
+        </a>
+      </li>
+      <li>
+        <a
+          class="App-link"
+          href="/teams/1"
+        >
+          team name
+        </a>
+      </li>
+    </ul>
     <a
       href="/createTeam"
     >

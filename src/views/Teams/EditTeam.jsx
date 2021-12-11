@@ -24,7 +24,7 @@ export default function EditTeam() {
 	}, [id]);
 
 	if (loading) return <span className="loading">Loading...</span>;
-	console.log(team);
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		const res = await updateTeamById(id, { name, city, state });

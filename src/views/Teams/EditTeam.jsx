@@ -21,7 +21,7 @@ export default function EditTeam() {
 				setState(res.state);
 			})
 			.finally(() => setLoading(false));
-	}, [id]);
+	}, [id, setTeam]);
 
 	if (loading) return <span className="loading">Loading...</span>;
 
@@ -33,6 +33,7 @@ export default function EditTeam() {
 	return (
 		<div>
 			<h1>Edit Team</h1>
+			{team.name}
 			<EditForm
 				name={name}
 				city={city}

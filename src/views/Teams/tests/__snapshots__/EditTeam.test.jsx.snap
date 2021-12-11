@@ -9,6 +9,7 @@ Object {
         <h1>
           Edit Team
         </h1>
+        team name
         <div>
           <h1>
             team name
@@ -70,6 +71,7 @@ Object {
       <h1>
         Edit Team
       </h1>
+      team name
       <div>
         <h1>
           team name

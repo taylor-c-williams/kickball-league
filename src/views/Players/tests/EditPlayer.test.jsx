@@ -16,9 +16,7 @@ it('should render accurately the edit player view and form component', async () 
 	);
 
 	await waitForElementToBeRemoved(() => screen.queryByText(/Loading.../i));
-	const textEntry = await screen.findByText('Update Player', {
-		exact: false,
-	});
+	const textEntry = await screen.findByText(/update player/i);
 
 	expect(container).toMatchSnapshot();
 	expect(textEntry).toBeInTheDocument();

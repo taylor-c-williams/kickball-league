@@ -1,4 +1,4 @@
-export default function NewForm({
+export default function TeamNewForm({
 	name,
 	city,
 	state,

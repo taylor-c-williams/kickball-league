@@ -18,7 +18,7 @@ export default function PlayersDetail() {
 
 	const handleDelete = async ({ id, name }) => {
 		await deletePlayerById(id);
-		history.push(`/teams/`);
+		history.push(`/players/`);
 	};
 
 	return (

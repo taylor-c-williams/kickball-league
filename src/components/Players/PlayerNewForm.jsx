@@ -2,6 +2,7 @@ export default function PlayerNewForm({
 	name,
 	position,
 	teamId,
+	teams,
 	handleSubmit,
 	setName,
 	setPosition,
@@ -30,14 +31,21 @@ export default function PlayerNewForm({
 						onChange={({ target }) => setPosition(target.value)}
 					/>
 
-					<label htmlFor="teamId">Team:</label>
-					<input
-						id="teamId"
-						name="teamId"
-						type="text"
+					<label htmlFor="teamId">Team</label>
+					<select
+						aria-label="teamId"
 						value={teamId}
 						onChange={({ target }) => setTeamId(target.value)}
-					/>
+					>
+						{teams.map((team) => {
+							return (
+								<option key={team.id} value={team.id}>
+									{team.name}
+								</option>
+							);
+						})}
+					</select>
+
 					<input
 						type="submit"
 						aria-label="Add New Player"

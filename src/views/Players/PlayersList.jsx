@@ -28,6 +28,7 @@ export default function PlayersList() {
 					);
 				})}
 			</ul>
+			<Link to="/newPlayer">Add New Player</Link>
 		</div>
 	);
 }

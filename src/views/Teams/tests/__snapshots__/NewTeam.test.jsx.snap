@@ -62,7 +62,7 @@ Object {
               <img
                 alt="kickball"
                 height="400"
-                src="/kickballs/ball_13.jpg"
+                src="/kickballs/ball_4.jpg"
               />
             </section>
           </fieldset>
@@ -128,7 +128,7 @@ Object {
             <img
               alt="kickball"
               height="400"
-              src="/kickballs/ball_13.jpg"
+              src="/kickballs/ball_4.jpg"
             />
           </section>
         </fieldset>

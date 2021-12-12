@@ -17,7 +17,7 @@ it('should render a detailed view of an individual player', async () => {
 
 	await waitForElementToBeRemoved(() => screen.queryByText(/Loading.../i));
 
-	const update = await screen.findByText(/update player/i);
+	const update = await screen.findByText(/edit karl/i);
 
 	expect(detail).toMatchSnapshot();
 	expect(update).toBeInTheDocument();

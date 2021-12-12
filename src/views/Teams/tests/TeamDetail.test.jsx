@@ -16,7 +16,7 @@ it('should render a detailed view of an individual team', async () => {
 	);
 	await waitForElementToBeRemoved(() => screen.queryByText(/Loading.../i));
 
-	const textEntry = await screen.findByText(/team name/i);
+	const textEntry = await screen.findByText(/delete team name/i);
 
 	expect(container).toMatchSnapshot();
 	expect(textEntry).toBeInTheDocument();

@@ -11,7 +11,7 @@ Object {
         </h1>
         <div>
           <h1>
-            karl
+            Karl
           </h1>
           <fieldset>
             <legend>
@@ -28,7 +28,7 @@ Object {
                 name="name"
                 required=""
                 type="text"
-                value="karl"
+                value="Karl"
               />
               <label
                 for="position"
@@ -40,7 +40,7 @@ Object {
                 name="position"
                 required=""
                 type="text"
-                value="kicker"
+                value="Kicker"
               />
               <label
                 for="teamId"
@@ -51,17 +51,14 @@ Object {
                 aria-label="teamId"
               >
                 <option
-                  value="4"
-                />
-                <option
-                  value="2"
-                >
-                  Taylor C Williams
-                </option>
-                <option
                   value="1"
                 >
                   team name
+                </option>
+                <option
+                  value="8"
+                >
+                  ꓘool ꓘidz
                 </option>
               </select>
               <input
@@ -82,7 +79,7 @@ Object {
       </h1>
       <div>
         <h1>
-          karl
+          Karl
         </h1>
         <fieldset>
           <legend>
@@ -99,7 +96,7 @@ Object {
               name="name"
               required=""
               type="text"
-              value="karl"
+              value="Karl"
             />
             <label
               for="position"
@@ -111,7 +108,7 @@ Object {
               name="position"
               required=""
               type="text"
-              value="kicker"
+              value="Kicker"
             />
             <label
               for="teamId"
@@ -122,17 +119,14 @@ Object {
               aria-label="teamId"
             >
               <option
-                value="4"
-              />
-              <option
-                value="2"
-              >
-                Taylor C Williams
-              </option>
-              <option
                 value="1"
               >
                 team name
+              </option>
+              <option
+                value="8"
+              >
+                ꓘool ꓘidz
               </option>
             </select>
             <input

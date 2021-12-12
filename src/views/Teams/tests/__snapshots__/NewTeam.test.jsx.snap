@@ -12,7 +12,7 @@ Object {
         <div>
           <fieldset>
             <legend>
-              Create stuff
+              Details
             </legend>
             <form>
               <label
@@ -48,12 +48,23 @@ Object {
                 type="text"
                 value=""
               />
-              <input
+              <button
                 aria-label="Add New Team"
                 type="submit"
                 value="Add New Team"
-              />
+              >
+                Add New Team
+              </button>
             </form>
+            <section
+              class="title-img"
+            >
+              <img
+                alt="kickball"
+                height="400"
+                src="/kickballs/ball_13.jpg"
+              />
+            </section>
           </fieldset>
         </div>
       </div>
@@ -67,7 +78,7 @@ Object {
       <div>
         <fieldset>
           <legend>
-            Create stuff
+            Details
           </legend>
           <form>
             <label
@@ -103,12 +114,23 @@ Object {
               type="text"
               value=""
             />
-            <input
+            <button
               aria-label="Add New Team"
               type="submit"
               value="Add New Team"
-            />
+            >
+              Add New Team
+            </button>
           </form>
+          <section
+            class="title-img"
+          >
+            <img
+              alt="kickball"
+              height="400"
+              src="/kickballs/ball_13.jpg"
+            />
+          </section>
         </fieldset>
       </div>
     </div>

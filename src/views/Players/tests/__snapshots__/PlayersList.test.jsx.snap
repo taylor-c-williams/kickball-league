@@ -14,7 +14,39 @@ exports[`renders PlayersList elements 1`] = `
           class="App-Link"
           href="/players/5"
         >
-          karl
+          Karl
+        </a>
+      </li>
+      <li>
+        <a
+          class="App-Link"
+          href="/players/7"
+        >
+          Katie
+        </a>
+      </li>
+      <li>
+        <a
+          class="App-Link"
+          href="/players/8"
+        >
+          Marvin
+        </a>
+      </li>
+      <li>
+        <a
+          class="App-Link"
+          href="/players/6"
+        >
+          Michael 
+        </a>
+      </li>
+      <li>
+        <a
+          class="App-Link"
+          href="/players/9"
+        >
+          Sarani
         </a>
       </li>
       <li>

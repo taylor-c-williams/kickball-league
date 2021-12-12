@@ -9,40 +9,53 @@ Object {
         class="content"
       >
         <h1>
-          karl
+          Karl
         </h1>
         <h2>
-          kicker
+          Kicker
         </h2>
-        <img
-          alt="an adorable frog faced kickyball"
-          src="https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg"
-          width="300px"
-        />
+        <section
+          class="title-img"
+        >
+          <img
+            alt="kickball"
+            height="400"
+            src="/kickballs/ball_35.jpg"
+          />
+        </section>
         <ul>
           <li>
             <a
-              href="/teams/1"
+              href="/teams/8"
             >
-              team name
+              ꓘool ꓘidz
             </a>
           </li>
           <li>
-            team city
+            Portland
             , 
-            team state
+            Oregon
           </li>
         </ul>
         <a
+          href="/teams/8"
+        >
+          ◁ Back to 
+          ꓘool ꓘidz
+        </a>
+        ||
+        <a
           href="/editPlayer/5"
         >
-          Update Player
+          Edit 
+          Karl
         </a>
         <button
-          aria-label="Delete karl"
+          aria-label="Delete Karl"
           type="button"
         >
-          Delete Player
+          Delete 
+          Karl
         </button>
       </div>
     </div>
@@ -52,40 +65,53 @@ Object {
       class="content"
     >
       <h1>
-        karl
+        Karl
       </h1>
       <h2>
-        kicker
+        Kicker
       </h2>
-      <img
-        alt="an adorable frog faced kickyball"
-        src="https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg"
-        width="300px"
-      />
+      <section
+        class="title-img"
+      >
+        <img
+          alt="kickball"
+          height="400"
+          src="/kickballs/ball_35.jpg"
+        />
+      </section>
       <ul>
         <li>
           <a
-            href="/teams/1"
+            href="/teams/8"
           >
-            team name
+            ꓘool ꓘidz
           </a>
         </li>
         <li>
-          team city
+          Portland
           , 
-          team state
+          Oregon
         </li>
       </ul>
       <a
+        href="/teams/8"
+      >
+        ◁ Back to 
+        ꓘool ꓘidz
+      </a>
+      ||
+      <a
         href="/editPlayer/5"
       >
-        Update Player
+        Edit 
+        Karl
       </a>
       <button
-        aria-label="Delete karl"
+        aria-label="Delete Karl"
         type="button"
       >
-        Delete Player
+        Delete 
+        Karl
       </button>
     </div>
   </div>,

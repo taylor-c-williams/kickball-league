@@ -11,6 +11,15 @@ Object {
         <h1>
           team name
         </h1>
+        <section
+          class="title-img"
+        >
+          <img
+            alt="kickball"
+            height="400"
+            src="/kickballs/ball_14.jpg"
+          />
+        </section>
         team city
         , 
         team state
@@ -19,31 +28,31 @@ Object {
             href="/players/4"
           >
             <li>
-              position player
-               - 
               name player
-            </li>
-          </a>
-          <a
-            href="/players/5"
-          >
-            <li>
-              kicker
-               - 
-              karl
+               ◌ 
+              position player
             </li>
           </a>
         </ul>
         <a
+          href="/NewPlayer"
+        >
+          Add Player
+        </a>
+         ◌
+        <a
           href="/editTeam/1"
         >
-          Update Team
+          Update Team Details
         </a>
+         ◌
+         
         <button
           aria-label="Delete team name"
           type="button"
         >
-          Delete
+          Delete 
+          team name
         </button>
       </div>
     </div>
@@ -55,6 +64,15 @@ Object {
       <h1>
         team name
       </h1>
+      <section
+        class="title-img"
+      >
+        <img
+          alt="kickball"
+          height="400"
+          src="/kickballs/ball_14.jpg"
+        />
+      </section>
       team city
       , 
       team state
@@ -63,31 +81,31 @@ Object {
           href="/players/4"
         >
           <li>
-            position player
-             - 
             name player
-          </li>
-        </a>
-        <a
-          href="/players/5"
-        >
-          <li>
-            kicker
-             - 
-            karl
+             ◌ 
+            position player
           </li>
         </a>
       </ul>
       <a
+        href="/NewPlayer"
+      >
+        Add Player
+      </a>
+       ◌
+      <a
         href="/editTeam/1"
       >
-        Update Team
+        Update Team Details
       </a>
+       ◌
+       
       <button
         aria-label="Delete team name"
         type="button"
       >
-        Delete
+        Delete 
+        team name
       </button>
     </div>
   </div>,

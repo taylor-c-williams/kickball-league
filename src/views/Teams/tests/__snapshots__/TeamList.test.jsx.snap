@@ -12,26 +12,29 @@ exports[`renders TeamList elements 1`] = `
       <li>
         <a
           class="App-link"
-          href="/teams/4"
-        />
-      </li>
-      <li>
-        <a
-          class="App-link"
-          href="/teams/2"
-        >
-          Taylor C Williams
-        </a>
-      </li>
-      <li>
-        <a
-          class="App-link"
           href="/teams/1"
         >
           team name
         </a>
       </li>
+      <li>
+        <a
+          class="App-link"
+          href="/teams/8"
+        >
+          ꓘool ꓘidz
+        </a>
+      </li>
     </ul>
+    <section
+      class="title-img"
+    >
+      <img
+        alt="kickball"
+        height="300"
+        src="/kickballs/ball_30.jpg"
+      />
+    </section>
     <a
       href="/newTeam"
     >

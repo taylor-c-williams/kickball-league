@@ -46,17 +46,14 @@ Object {
                 aria-label="teamId"
               >
                 <option
-                  value="4"
-                />
-                <option
-                  value="2"
-                >
-                  Taylor C Williams
-                </option>
-                <option
                   value="1"
                 >
                   team name
+                </option>
+                <option
+                  value="8"
+                >
+                  ꓘool ꓘidz
                 </option>
               </select>
               <input
@@ -112,17 +109,14 @@ Object {
               aria-label="teamId"
             >
               <option
-                value="4"
-              />
-              <option
-                value="2"
-              >
-                Taylor C Williams
-              </option>
-              <option
                 value="1"
               >
                 team name
+              </option>
+              <option
+                value="8"
+              >
+                ꓘool ꓘidz
               </option>
             </select>
             <input

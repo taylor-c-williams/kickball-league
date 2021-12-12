@@ -11,7 +11,7 @@ it('should render accurately the create team view and component', async () => {
 		</MemoryRouter>
 	);
 
-	const textEntry = await screen.findByText('Create stuff', {
+	const textEntry = await screen.findByText('Create New Team', {
 		exact: false,
 	});
 

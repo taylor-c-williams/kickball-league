@@ -14,22 +14,18 @@ export default function EditPlayer() {
 	const history = useHistory();
 
 	useEffect(() => {
-		getPlayerById(id)
-			.then((res) => {
-				setPosition(res.position);
-				setName(res.name);
-				setTeamId(res.team_id);
-			})
-			.finally(() => setLoading(false));
-	}, [id]);
-
-	useEffect(() => {
+		getPlayerById(id).then((res) => {
+			setPosition(res.position);
+			setName(res.name);
+			setTeamId(res.team_id);
+		});
 		getTeams()
 			.then((res) => setTeams(res))
 			.finally(() => setLoading(false));
-	}, []);
+	}, [id]);
 
 	if (loading) return <span className="loading">Loading...</span>;
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		const res = await updatePlayerById(id, { name, position, teamId });

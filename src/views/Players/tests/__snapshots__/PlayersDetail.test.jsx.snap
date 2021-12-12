@@ -9,10 +9,10 @@ Object {
         class="content"
       >
         <h1>
-          player name
+          karl
         </h1>
         <h2>
-          player position
+          kicker
         </h2>
         <img
           alt="an adorable frog faced kickyball"
@@ -34,12 +34,12 @@ Object {
           </li>
         </ul>
         <a
-          href="/editPlayer/3"
+          href="/editPlayer/5"
         >
           Update Player
         </a>
         <button
-          aria-label="Delete player name"
+          aria-label="Delete karl"
           type="button"
         >
           Delete Player
@@ -52,10 +52,10 @@ Object {
       class="content"
     >
       <h1>
-        player name
+        karl
       </h1>
       <h2>
-        player position
+        kicker
       </h2>
       <img
         alt="an adorable frog faced kickyball"
@@ -77,12 +77,12 @@ Object {
         </li>
       </ul>
       <a
-        href="/editPlayer/3"
+        href="/editPlayer/5"
       >
         Update Player
       </a>
       <button
-        aria-label="Delete player name"
+        aria-label="Delete karl"
         type="button"
       >
         Delete Player

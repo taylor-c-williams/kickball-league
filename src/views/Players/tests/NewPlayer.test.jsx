@@ -4,20 +4,19 @@ import {
 	screen,
 } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
-import EditPlayer from '../EditPlayer';
+import NewPlayer from '../NewPlayer';
 
-it('should render accurately the edit player view and form component', async () => {
+it('should render accurately the create new player view and component', async () => {
 	const container = render(
-		<MemoryRouter initialEntries={['/editPlayer/5']}>
-			<Route path="/editPlayer/:id">
-				<EditPlayer />
+		<MemoryRouter initialEntries={['/newPlayer']}>
+			<Route path="/newPlayer">
+				<NewPlayer />
 			</Route>
 		</MemoryRouter>
 	);
 
 	await waitForElementToBeRemoved(() => screen.queryByText(/Loading.../i));
-
-	const textEntry = await screen.findByText(/update/i);
+	const textEntry = await screen.findByText(/Position/i);
 
 	expect(container).toMatchSnapshot();
 	expect(textEntry).toBeInTheDocument();

@@ -12,12 +12,25 @@ exports[`renders PlayersList elements 1`] = `
       <li>
         <a
           class="App-Link"
-          href="/players/3"
+          href="/players/5"
         >
-          player name
+          karl
+        </a>
+      </li>
+      <li>
+        <a
+          class="App-Link"
+          href="/players/4"
+        >
+          name player
         </a>
       </li>
     </ul>
+    <a
+      href="/newPlayer"
+    >
+      Add New Player
+    </a>
   </div>
 </div>
 `;

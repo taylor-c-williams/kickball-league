@@ -4,8 +4,8 @@ import NewTeam from '../NewTeam';
 
 it('should render accurately the create team view and component', async () => {
 	const container = render(
-		<MemoryRouter initialEntries={['/create']}>
-			<Route path="/create">
+		<MemoryRouter initialEntries={['/newTeam']}>
+			<Route path="/newTeam">
 				<NewTeam />
 			</Route>
 		</MemoryRouter>

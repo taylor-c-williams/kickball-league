@@ -1,21 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render accurately the edit player view and form component 1`] = `
+exports[`should render accurately the create new player view and component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div>
         <h1>
-          Edit Player
+          Add New Player
         </h1>
         <div>
-          <h1>
-            karl
-          </h1>
           <fieldset>
             <legend>
-              Edit stuff
+              New Player
             </legend>
             <form>
               <label
@@ -26,21 +23,19 @@ Object {
               <input
                 id="name"
                 name="name"
-                required=""
                 type="text"
-                value="karl"
+                value=""
               />
               <label
                 for="position"
               >
-                Player Position:
+                Position
               </label>
               <input
                 id="position"
                 name="position"
-                required=""
                 type="text"
-                value="kicker"
+                value=""
               />
               <label
                 for="teamId"
@@ -65,9 +60,9 @@ Object {
                 </option>
               </select>
               <input
-                aria-label="Update Player"
+                aria-label="Add New Player"
                 type="submit"
-                value="Update Player"
+                value="Add New Player"
               />
             </form>
           </fieldset>
@@ -78,15 +73,12 @@ Object {
   "container": <div>
     <div>
       <h1>
-        Edit Player
+        Add New Player
       </h1>
       <div>
-        <h1>
-          karl
-        </h1>
         <fieldset>
           <legend>
-            Edit stuff
+            New Player
           </legend>
           <form>
             <label
@@ -97,21 +89,19 @@ Object {
             <input
               id="name"
               name="name"
-              required=""
               type="text"
-              value="karl"
+              value=""
             />
             <label
               for="position"
             >
-              Player Position:
+              Position
             </label>
             <input
               id="position"
               name="position"
-              required=""
               type="text"
-              value="kicker"
+              value=""
             />
             <label
               for="teamId"
@@ -136,9 +126,9 @@ Object {
               </option>
             </select>
             <input
-              aria-label="Update Player"
+              aria-label="Add New Player"
               type="submit"
-              value="Update Player"
+              value="Add New Player"
             />
           </form>
         </fieldset>

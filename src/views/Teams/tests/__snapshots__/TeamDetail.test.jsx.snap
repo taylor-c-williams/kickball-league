@@ -16,12 +16,21 @@ Object {
         team state
         <ul>
           <a
-            href="/players/3"
+            href="/players/4"
           >
             <li>
-              player position
+              position player
                - 
-              player name
+              name player
+            </li>
+          </a>
+          <a
+            href="/players/5"
+          >
+            <li>
+              kicker
+               - 
+              karl
             </li>
           </a>
         </ul>
@@ -51,12 +60,21 @@ Object {
       team state
       <ul>
         <a
-          href="/players/3"
+          href="/players/4"
         >
           <li>
-            player position
+            position player
              - 
-            player name
+            name player
+          </li>
+        </a>
+        <a
+          href="/players/5"
+        >
+          <li>
+            kicker
+             - 
+            karl
           </li>
         </a>
       </ul>

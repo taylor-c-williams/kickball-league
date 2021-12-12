@@ -14,7 +14,6 @@ it('should render a detailed view of an individual team', async () => {
 			</Route>
 		</MemoryRouter>
 	);
-
 	await waitForElementToBeRemoved(() => screen.queryByText(/Loading.../i));
 
 	const textEntry = await screen.findByText(/team name/i);

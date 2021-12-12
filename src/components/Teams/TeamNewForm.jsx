@@ -1,3 +1,5 @@
+import { getRndInteger } from '../../services/global';
+
 export default function TeamNewForm({
 	name,
 	city,
@@ -10,7 +12,7 @@ export default function TeamNewForm({
 	return (
 		<div>
 			<fieldset>
-				<legend>Create stuff</legend>
+				<legend>Details</legend>
 				<form onSubmit={handleSubmit}>
 					<label htmlFor="name">Team Name:</label>
 					<input
@@ -38,8 +40,17 @@ export default function TeamNewForm({
 						value={state}
 						onChange={({ target }) => setState(target.value)}
 					/>
-					<input type="submit" aria-label="Add New Team" value="Add New Team" />
+					<button type="submit" aria-label="Add New Team" value="Add New Team">
+						Add New Team
+					</button>
 				</form>
+				<section className="title-img">
+					<img
+						src={`/kickballs/ball_${getRndInteger(1, 35)}.jpg`}
+						alt="kickball"
+						height="400"
+					/>
+				</section>
 			</fieldset>
 		</div>
 	);

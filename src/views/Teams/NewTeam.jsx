@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { createTeam } from '../../services/teams';
+import { getRndInteger } from '../../services/global';
 import TeamNewForm from '../../components/Teams/TeamNewForm';
 
 export default function NewTeam() {

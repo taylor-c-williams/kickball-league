@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getTeams } from '../../services/teams';
+import { getRndInteger } from '../../services/global';
 
 export default function TeamList() {
 	const [teams, setTeams] = useState([]);
@@ -28,6 +29,13 @@ export default function TeamList() {
 					);
 				})}
 			</ul>
+			<section className="title-img">
+				<img
+					src={`/kickballs/ball_${getRndInteger(1, 35)}.jpg`}
+					alt="kickball"
+					height="300"
+				/>
+			</section>
 			<Link to="/newTeam">Create New Team</Link>
 		</div>
 	);

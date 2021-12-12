@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams, useHistory } from 'react-router-dom';
 import { getPlayerById, deletePlayerById } from '../../services/players';
+import { getRndInteger } from '../../services/global';
 
 export default function PlayersDetail() {
 	const { id } = useParams();
@@ -25,11 +26,13 @@ export default function PlayersDetail() {
 		<div className="content">
 			<h1>{player.name}</h1>
 			<h2>{player.position}</h2>
-			<img
-				width="300px"
-				src="https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg"
-				alt="an adorable frog faced kickyball"
-			/>
+			<section className="title-img">
+				<img
+					src={`/kickballs/ball_${getRndInteger(1, 35)}.jpg`}
+					alt="kickball"
+					height="400"
+				/>
+			</section>
 			<ul>
 				<li>
 					<Link to={`/teams/${player.teams.id}`}>{player.teams.name}</Link>
@@ -38,13 +41,17 @@ export default function PlayersDetail() {
 					{player.teams.city}, {player.teams.state}
 				</li>
 			</ul>
-			<Link to={`/editPlayer/${player.id}`}>Update Player</Link>
+			<Link to={`/teams/${player.teams.id}`}>
+				◁ Back to {player.teams.name}
+			</Link>
+			||
+			<Link to={`/editPlayer/${player.id}`}>Edit {player.name}</Link>
 			<button
 				type="button"
 				aria-label={`Delete ${player.name}`}
 				onClick={() => handleDelete({ id: player.id, name: player.name })}
 			>
-				Delete Player
+				Delete {player.name}
 			</button>
 		</div>
 	);

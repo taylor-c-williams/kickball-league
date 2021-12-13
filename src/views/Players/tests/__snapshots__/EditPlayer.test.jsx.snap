@@ -10,7 +10,9 @@ Object {
           Edit Player
         </h1>
         <div>
-          <h1 />
+          <h1>
+            Karl
+          </h1>
           <fieldset>
             <legend>
               Edit stuff
@@ -26,7 +28,7 @@ Object {
                 name="name"
                 required=""
                 type="text"
-                value=""
+                value="Karl"
               />
               <label
                 for="position"
@@ -38,7 +40,7 @@ Object {
                 name="position"
                 required=""
                 type="text"
-                value=""
+                value="Kicker"
               />
               <label
                 for="teamId"
@@ -76,7 +78,9 @@ Object {
         Edit Player
       </h1>
       <div>
-        <h1 />
+        <h1>
+          Karl
+        </h1>
         <fieldset>
           <legend>
             Edit stuff
@@ -92,7 +96,7 @@ Object {
               name="name"
               required=""
               type="text"
-              value=""
+              value="Karl"
             />
             <label
               for="position"
@@ -104,7 +108,7 @@ Object {
               name="position"
               required=""
               type="text"
-              value=""
+              value="Kicker"
             />
             <label
               for="teamId"

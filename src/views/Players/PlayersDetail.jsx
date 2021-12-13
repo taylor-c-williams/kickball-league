@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams, useHistory } from 'react-router-dom';
 import { getPlayerById, deletePlayerById } from '../../services/players';
-import RandomUrl from '../../components/Players/RandomImg';
+import RandomImg from '../../components/Players/RandomImg';
 
 export default function PlayersDetail({ min, max }) {
 	const { id } = useParams();
@@ -27,7 +27,7 @@ export default function PlayersDetail({ min, max }) {
 			<h1>{player.name}</h1>
 			<h2>{player.position}</h2>
 			<ul>
-				<RandomUrl min={min} max={max} />
+				<RandomImg min={min} max={max} />
 				<li>
 					<Link to={`/teams/${player.teams.id}`}>{player.teams.name}</Link>
 				</li>

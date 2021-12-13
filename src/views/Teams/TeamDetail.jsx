@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams, useHistory } from 'react-router-dom';
-import { getRndInteger } from '../../services/global';
 import { getTeamById, deleteTeamById } from '../../services/teams';
 import RandomImg from '../../components/Players/RandomImg';
 

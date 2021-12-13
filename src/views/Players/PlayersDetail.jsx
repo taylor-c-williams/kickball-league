@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams, useHistory } from 'react-router-dom';
 import { getPlayerById, deletePlayerById } from '../../services/players';
-import { getRndInteger } from '../../services/global';
+import RandomUrl from '../../components/Players/RandomImg';
 
-export default function PlayersDetail() {
+export default function PlayersDetail({ min, max }) {
 	const { id } = useParams();
 	const [player, setPlayer] = useState(null);
 	const [loading, setLoading] = useState(true);
@@ -26,14 +26,8 @@ export default function PlayersDetail() {
 		<div className="content">
 			<h1>{player.name}</h1>
 			<h2>{player.position}</h2>
-			<section className="title-img">
-				<img
-					src={`/kickballs/ball_${getRndInteger(1, 35)}.jpg`}
-					alt="kickball"
-					height="400"
-				/>
-			</section>
 			<ul>
+				<RandomUrl min={min} max={max} />
 				<li>
 					<Link to={`/teams/${player.teams.id}`}>{player.teams.name}</Link>
 				</li>

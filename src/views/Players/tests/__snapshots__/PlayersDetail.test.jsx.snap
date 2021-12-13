@@ -14,16 +14,16 @@ Object {
         <h2>
           Kicker
         </h2>
-        <section
-          class="title-img"
-        >
-          <img
-            alt="kickball"
-            height="400"
-            src="/kickballs/ball_25.jpg"
-          />
-        </section>
         <ul>
+          <section
+            class="title-img"
+          >
+            <img
+              alt="kickball"
+              height="400"
+              src="/kickballs/ball_1.jpg"
+            />
+          </section>
           <li>
             <a
               href="/teams/8"
@@ -70,16 +70,16 @@ Object {
       <h2>
         Kicker
       </h2>
-      <section
-        class="title-img"
-      >
-        <img
-          alt="kickball"
-          height="400"
-          src="/kickballs/ball_25.jpg"
-        />
-      </section>
       <ul>
+        <section
+          class="title-img"
+        >
+          <img
+            alt="kickball"
+            height="400"
+            src="/kickballs/ball_1.jpg"
+          />
+        </section>
         <li>
           <a
             href="/teams/8"

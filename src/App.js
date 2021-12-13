@@ -35,11 +35,20 @@ function App() {
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/teams" component={TeamList} />
-					<Route exact path="/teams/:id" component={TeamDetail} />
+					<Route
+						exact
+						path="/teams/:id"
+						render={() => <TeamDetail min={1} max={35} />}
+					/>
 					<Route exact path="/newTeam" component={NewTeam} />
 					<Route exact path="/editTeam/:id" component={EditTeam} />
 					<Route exact path="/players" component={PlayersList} />
-					<Route exact path="/players/:id" component={PlayersDetail} />
+
+					<Route
+						exact
+						path="/players/:id"
+						render={() => <PlayersDetail min={1} max={35} />}
+					/>
 					<Route exact path="/newPlayer" component={NewPlayer} />
 					<Route exact path="/editPlayer/:id" component={EditPlayer} />
 				</Switch>

@@ -10,7 +10,7 @@ it('should render a detailed view of an individual player', async () => {
 	const detail = render(
 		<MemoryRouter initialEntries={['/players/5']}>
 			<Route path="/players/:id">
-				<PlayersDetail />
+				<PlayersDetail min={1} max={1} />
 			</Route>
 		</MemoryRouter>
 	);

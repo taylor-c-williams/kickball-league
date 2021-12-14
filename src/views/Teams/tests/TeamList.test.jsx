@@ -9,7 +9,7 @@ import TeamList from '../TeamList';
 it('renders TeamList elements', async () => {
 	const { container } = render(
 		<Router>
-			<TeamList />
+			<TeamList min={1} max={1} />
 		</Router>
 	);
 

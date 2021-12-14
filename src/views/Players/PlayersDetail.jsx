@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { getPlayerById } from '../../services/players';
+import { Link, useParams, useHistory } from 'react-router-dom';
+import { getPlayerById, deletePlayerById } from '../../services/players';
+import RandomImg from '../../components/Players/RandomImg';
 
-export default function PlayersDetail() {
+export default function PlayersDetail({ min, max }) {
 	const { id } = useParams();
 	const [player, setPlayer] = useState(null);
 	const [loading, setLoading] = useState(true);
+	const history = useHistory();
 
 	useEffect(() => {
 		getPlayerById(id)
@@ -15,16 +17,17 @@ export default function PlayersDetail() {
 
 	if (loading) return <span className="loading">Loading...</span>;
 
+	const handleDelete = async ({ id, name }) => {
+		await deletePlayerById(id);
+		history.push(`/players/`);
+	};
+
 	return (
 		<div className="content">
 			<h1>{player.name}</h1>
 			<h2>{player.position}</h2>
-			<img
-				width="300px"
-				src="https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg"
-				alt="an adorable frog faced kickyball"
-			/>
 			<ul>
+				<RandomImg min={min} max={max} />
 				<li>
 					<Link to={`/teams/${player.teams.id}`}>{player.teams.name}</Link>
 				</li>
@@ -32,6 +35,18 @@ export default function PlayersDetail() {
 					{player.teams.city}, {player.teams.state}
 				</li>
 			</ul>
+			<Link to={`/teams/${player.teams.id}`}>
+				◁ Back to {player.teams.name}
+			</Link>
+			||
+			<Link to={`/editPlayer/${player.id}`}>Edit {player.name}</Link>
+			<button
+				type="button"
+				aria-label={`Delete ${player.name}`}
+				onClick={() => handleDelete({ id: player.id, name: player.name })}
+			>
+				Delete {player.name}
+			</button>
 		</div>
 	);
 }

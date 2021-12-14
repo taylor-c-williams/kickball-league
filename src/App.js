@@ -7,10 +7,14 @@ import {
 import Home from './views/Home/Home';
 import TeamDetail from './views/Teams/TeamDetail';
 import TeamList from './views/Teams/TeamList';
+import NewTeam from './views/Teams/NewTeam';
+import EditTeam from './views/Teams/EditTeam';
 import PlayersDetail from './views/Players/PlayersDetail';
 import PlayersList from './views/Players/PlayersList';
+import NewPlayer from './views/Players/NewPlayer';
 import Footer from './components/Footer';
 import './App.css';
+import EditPlayer from './views/Players/EditPlayer';
 
 function App() {
 	return (
@@ -31,9 +35,21 @@ function App() {
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/teams" component={TeamList} />
-					<Route exact path="/teams/:id" component={TeamDetail} />
+					<Route exact path="/newTeam" component={NewTeam} />
+					<Route exact path="/editTeam/:id" component={EditTeam} />
 					<Route exact path="/players" component={PlayersList} />
-					<Route exact path="/players/:id" component={PlayersDetail} />
+					<Route exact path="/newPlayer" component={NewPlayer} />
+					<Route exact path="/editPlayer/:id" component={EditPlayer} />
+					<Route
+						exact
+						path="/teams/:id"
+						render={() => <TeamDetail min={1} max={35} />}
+					/>
+					<Route
+						exact
+						path="/players/:id"
+						render={() => <PlayersDetail min={1} max={35} />}
+					/>
 				</Switch>
 				<Footer />
 			</Router>

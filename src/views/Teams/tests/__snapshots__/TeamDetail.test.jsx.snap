@@ -9,49 +9,51 @@ Object {
         class="content"
       >
         <h1>
-          Bridge City Sneakers
+          team name
         </h1>
-        Portland
+        <section
+          class="title-img"
+        >
+          <img
+            alt="kickball"
+            height="400"
+            src="/kickballs/ball_4.jpg"
+          />
+        </section>
+        team city
         , 
-        OR
+        team state
         <ul>
-          <a
-            href="/players/1"
-          >
-            <li>
-              Pitcher
-               - 
-              Ben E. Jetts
-            </li>
-          </a>
-          <a
-            href="/players/2"
-          >
-            <li>
-              Catcher
-               - 
-              Hans Olo
-            </li>
-          </a>
-          <a
-            href="/players/3"
-          >
-            <li>
-              Outfield
-               - 
-              Ron Long
-            </li>
-          </a>
           <a
             href="/players/4"
           >
             <li>
-              Shortstop
-               - 
-              Shorty Biggum
+              name player
+               ◌ 
+              position player
             </li>
           </a>
         </ul>
+        <a
+          href="/NewPlayer"
+        >
+          Add Player
+        </a>
+         ◌
+        <a
+          href="/editTeam/1"
+        >
+          Update Team Details
+        </a>
+         ◌
+         
+        <button
+          aria-label="Delete team name"
+          type="button"
+        >
+          Delete 
+          team name
+        </button>
       </div>
     </div>
   </body>,
@@ -60,49 +62,51 @@ Object {
       class="content"
     >
       <h1>
-        Bridge City Sneakers
+        team name
       </h1>
-      Portland
+      <section
+        class="title-img"
+      >
+        <img
+          alt="kickball"
+          height="400"
+          src="/kickballs/ball_4.jpg"
+        />
+      </section>
+      team city
       , 
-      OR
+      team state
       <ul>
-        <a
-          href="/players/1"
-        >
-          <li>
-            Pitcher
-             - 
-            Ben E. Jetts
-          </li>
-        </a>
-        <a
-          href="/players/2"
-        >
-          <li>
-            Catcher
-             - 
-            Hans Olo
-          </li>
-        </a>
-        <a
-          href="/players/3"
-        >
-          <li>
-            Outfield
-             - 
-            Ron Long
-          </li>
-        </a>
         <a
           href="/players/4"
         >
           <li>
-            Shortstop
-             - 
-            Shorty Biggum
+            name player
+             ◌ 
+            position player
           </li>
         </a>
       </ul>
+      <a
+        href="/NewPlayer"
+      >
+        Add Player
+      </a>
+       ◌
+      <a
+        href="/editTeam/1"
+      >
+        Update Team Details
+      </a>
+       ◌
+       
+      <button
+        aria-label="Delete team name"
+        type="button"
+      >
+        Delete 
+        team name
+      </button>
     </div>
   </div>,
   "debug": [Function],

@@ -4,14 +4,19 @@ import { getPlayers } from '../../services/players';
 
 export default function PlayersList() {
 	const [players, setPlayers] = useState([]);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		getPlayers().then((res) => setPlayers(res));
+		getPlayers()
+			.then((res) => setPlayers(res))
+			.finally(() => setLoading(false));
 	}, []);
-	console.log(players);
+
+	if (loading) return <span className="loading">Loading...</span>;
+
 	return (
 		<div className="content">
-			<h1>Players</h1>
+			<h1>Players </h1>
 			<ul>
 				{players.map((player) => {
 					return (
@@ -23,6 +28,7 @@ export default function PlayersList() {
 					);
 				})}
 			</ul>
+			<Link to="/newPlayer">Add New Player</Link>
 		</div>
 	);
 }

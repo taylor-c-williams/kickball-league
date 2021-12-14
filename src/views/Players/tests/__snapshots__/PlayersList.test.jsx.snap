@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders PlayersList elements 1`] = `
+<div>
+  <div
+    class="content"
+  >
+    <h1>
+      Players 
+    </h1>
+    <ul>
+      <li>
+        <a
+          class="App-Link"
+          href="/players/5"
+        >
+          Karl
+        </a>
+      </li>
+      <li>
+        <a
+          class="App-Link"
+          href="/players/7"
+        >
+          Katie
+        </a>
+      </li>
+      <li>
+        <a
+          class="App-Link"
+          href="/players/8"
+        >
+          Marvin
+        </a>
+      </li>
+      <li>
+        <a
+          class="App-Link"
+          href="/players/6"
+        >
+          Michael 
+        </a>
+      </li>
+      <li>
+        <a
+          class="App-Link"
+          href="/players/9"
+        >
+          Sarani
+        </a>
+      </li>
+      <li>
+        <a
+          class="App-Link"
+          href="/players/4"
+        >
+          name player
+        </a>
+      </li>
+    </ul>
+    <a
+      href="/newPlayer"
+    >
+      Add New Player
+    </a>
+  </div>
+</div>
+`;

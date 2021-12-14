@@ -1,6 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import {
+	waitForElementToBeRemoved,
+	render,
+	screen,
+} from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
-import TeamDetail from './TeamDetail';
+import TeamDetail from '../TeamDetail';
 
 it('should render a detailed view of an individual team', async () => {
 	const container = render(
@@ -10,12 +14,9 @@ it('should render a detailed view of an individual team', async () => {
 			</Route>
 		</MemoryRouter>
 	);
+	await waitForElementToBeRemoved(() => screen.queryByText(/Loading.../i));
 
-	screen.getByText('Loading...');
-
-	const textEntry = await screen.findByText('Pitcher', {
-		exact: false,
-	});
+	const textEntry = await screen.findByText(/delete team name/i);
 
 	expect(container).toMatchSnapshot();
 	expect(textEntry).toBeInTheDocument();

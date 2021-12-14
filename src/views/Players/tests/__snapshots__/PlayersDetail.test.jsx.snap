@@ -9,30 +9,54 @@ Object {
         class="content"
       >
         <h1>
-          Ben E. Jetts
+          Karl
         </h1>
         <h2>
-          Pitcher
+          Kicker
         </h2>
-        <img
-          alt="an adorable frog faced kickyball"
-          src="https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg"
-          width="300px"
-        />
         <ul>
+          <section
+            class="title-img"
+          >
+            <img
+              alt="kickball"
+              height="400"
+              src="/kickballs/ball_4.jpg"
+            />
+          </section>
           <li>
             <a
-              href="/teams/1"
+              href="/teams/8"
             >
-              Bridge City Sneakers
+              ꓘool ꓘidz
             </a>
           </li>
           <li>
             Portland
             , 
-            OR
+            Oregon
           </li>
         </ul>
+        <a
+          href="/teams/8"
+        >
+          ◁ Back to 
+          ꓘool ꓘidz
+        </a>
+        ||
+        <a
+          href="/editPlayer/5"
+        >
+          Edit 
+          Karl
+        </a>
+        <button
+          aria-label="Delete Karl"
+          type="button"
+        >
+          Delete 
+          Karl
+        </button>
       </div>
     </div>
   </body>,
@@ -41,30 +65,54 @@ Object {
       class="content"
     >
       <h1>
-        Ben E. Jetts
+        Karl
       </h1>
       <h2>
-        Pitcher
+        Kicker
       </h2>
-      <img
-        alt="an adorable frog faced kickyball"
-        src="https://m.media-amazon.com/images/I/51vPSKT9L7L._AC_SX425_.jpg"
-        width="300px"
-      />
       <ul>
+        <section
+          class="title-img"
+        >
+          <img
+            alt="kickball"
+            height="400"
+            src="/kickballs/ball_4.jpg"
+          />
+        </section>
         <li>
           <a
-            href="/teams/1"
+            href="/teams/8"
           >
-            Bridge City Sneakers
+            ꓘool ꓘidz
           </a>
         </li>
         <li>
           Portland
           , 
-          OR
+          Oregon
         </li>
       </ul>
+      <a
+        href="/teams/8"
+      >
+        ◁ Back to 
+        ꓘool ꓘidz
+      </a>
+      ||
+      <a
+        href="/editPlayer/5"
+      >
+        Edit 
+        Karl
+      </a>
+      <button
+        aria-label="Delete Karl"
+        type="button"
+      >
+        Delete 
+        Karl
+      </button>
     </div>
   </div>,
   "debug": [Function],

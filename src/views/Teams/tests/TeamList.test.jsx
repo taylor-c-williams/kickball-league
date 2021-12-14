@@ -9,13 +9,10 @@ import TeamList from '../TeamList';
 it('renders TeamList elements', async () => {
 	const { container } = render(
 		<Router>
-			<TeamList min={1} max={1} />
+			<TeamList />
 		</Router>
 	);
 
-	// await screen.findByText('Teams:', {
-	// 	exact: false,
-	// });
 	await waitForElementToBeRemoved(() => screen.queryByText(/Loading.../i));
 	const textElement = await screen.findByText('Teams', { exact: false });
 	expect(textElement).toBeInTheDocument();

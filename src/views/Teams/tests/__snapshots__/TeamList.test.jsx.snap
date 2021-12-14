@@ -32,7 +32,7 @@ exports[`renders TeamList elements 1`] = `
       <img
         alt="kickball"
         height="300"
-        src="/kickballs/ball_6.jpg"
+        src="/kickballs/ball_24.jpg"
       />
     </section>
     <a
